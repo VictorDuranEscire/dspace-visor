@@ -1,4 +1,5 @@
 import Mirador from 'mirador/dist/es/src/index';
+import downloadDialogPlugin from 'mirador-downloaddialog/es';
 
 // You can modify this default Mirador configuration file. However,
 // you should consider creating a copy of this file named
@@ -12,7 +13,7 @@ import Mirador from 'mirador/dist/es/src/index';
 
 // You can add or remove plugins. When adding new plugins be sure to also
 // import them into the project via your package.json dependencies.
-import miradorShareDialogPlugin from 'mirador-share-plugin/es/MiradorShareDialog';
+import miradorShareDialogPlugin from 'mirador-share-plugin/es/MiradorShareDialog';  
 import miradorSharePlugin from 'mirador-share-plugin/es/miradorSharePlugin';
 import miradorDownloadPlugin from 'mirador-dl-plugin/es/miradorDownloadPlugin';
 import miradorDownloadDialog from 'mirador-dl-plugin/es/MiradorDownloadDialog';
@@ -173,7 +174,8 @@ windowSettings.manifestId = manifest;
       miradorShareDialogPlugin,
       miradorSharePlugin,
       miradorDownloadDialog,
-      miradorDownloadPlugin
+      miradorDownloadPlugin,
+      ...downloadDialogPlugin
     ]
   )
 )(manifest);
