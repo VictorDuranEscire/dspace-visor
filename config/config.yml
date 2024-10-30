@@ -2,4 +2,4 @@ rest:
   ssl: true
   host: dspace.taller.escire.net
   port: 443
-  nameSpace: /server_taller
+  nameSpace: /taller_server
